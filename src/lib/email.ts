@@ -36,7 +36,7 @@ export async function sendWhiteGloveEmail({
   <p style="margin-top: 32px;">Be well,</p>
   <p><strong>Alex Purdy</strong><br/>Principal &amp; Steward<br/><a href="https://whitneysanctuary.com" style="color: #C4A35A;">whitneysanctuary.com</a><br/>704-989-9005</p>
   <div style="border-top: 1px solid #D4D0C8; margin-top: 32px; padding-top: 16px; font-size: 12px; color: #4A5568;">
-    <p>Offered at $2,195,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858</p>
+    <p>Offered at $2,025,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858</p>
   </div>
 </div>`,
   });

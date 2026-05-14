@@ -59,7 +59,7 @@ export function HeroSection({ onCTA, regionKey }: HeroProps) {
           ) : null}
 
           <p className="mt-4 text-2xl font-light tracking-wide text-gold md:text-3xl">
-            $2,195,000
+            $2,025,000
           </p>
 
           <button

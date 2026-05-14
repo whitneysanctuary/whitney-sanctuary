@@ -25,7 +25,7 @@ export const dripEmails: Record<
   <p><strong>Alex Purdy</strong><br/>Principal &amp; Steward<br/><a href="https://whitneysanctuary.com" style="color: #C4A35A;">whitneysanctuary.com</a><br/>704-989-9005</p>
 
   <div style="border-top: 1px solid #D4D0C8; margin-top: 28px; padding-top: 14px; font-size: 11px; color: #4A5568;">
-    Offered at $2,195,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
+    Offered at $2,025,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
   </div>
 </div>`,
   },
@@ -61,14 +61,14 @@ export const dripEmails: Record<
   <p><strong>Alex Purdy</strong><br/>Principal &amp; Steward<br/><a href="https://whitneysanctuary.com" style="color: #C4A35A;">whitneysanctuary.com</a><br/>704-989-9005</p>
 
   <div style="border-top: 1px solid #D4D0C8; margin-top: 28px; padding-top: 14px; font-size: 11px; color: #4A5568;">
-    Offered at $2,195,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
+    Offered at $2,025,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
   </div>
 </div>`,
   },
 
   7: {
     day: 7,
-    subject: "The $2.195M Window: Strategic Arbitrage",
+    subject: "The $2.025M Window: Strategic Arbitrage",
     html: (name: string) => `
 <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; color: #1A1A1A;">
   <div style="border-bottom: 2px solid #C4A35A; padding-bottom: 16px; margin-bottom: 20px;">
@@ -78,7 +78,7 @@ export const dripEmails: Record<
 
   <p>Dear ${name},</p>
 
-  <p>When we established the $2,195,000 anchor for this compound, it was based on forensic market data, not aspiration.</p>
+  <p>When we established the $2,025,000 anchor for this compound, it was based on forensic market data, not aspiration.</p>
 
   <p>Recent sales in our corridor have established a clear ceiling:</p>
 
@@ -96,7 +96,7 @@ export const dripEmails: Record<
   <p style="margin-top: 28px;"><strong>Alex Purdy</strong><br/>704-989-9005<br/><a href="mailto:alex@whitneysanctuary.com" style="color: #C4A35A;">alex@whitneysanctuary.com</a></p>
 
   <div style="border-top: 1px solid #D4D0C8; margin-top: 28px; padding-top: 14px; font-size: 11px; color: #4A5568;">
-    Offered at $2,195,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
+    Offered at $2,025,000 | Two parcels conveying (06156102 + 06156006R) | Deed Book 8351, Page 858
   </div>
 </div>`,
   },

@@ -23,7 +23,7 @@ const STATES: Record<string, StateData> = {
 };
 
 const NC_INCOME_TAX = 3.99;
-const WHITNEY_PROPERTY_TAX = 14223;
+const WHITNEY_PROPERTY_TAX = 13122;
 
 export default function TaxCalculator() {
   const [stateCode, setStateCode] = useState("CA");
@@ -128,7 +128,7 @@ export default function TaxCalculator() {
             </p>
             <p className="mt-4 text-xs italic text-white/40">
               Estimates only. Tax obligations vary by individual circumstances.
-              Property tax comparison assumes equivalent $2.2M home in
+              Property tax comparison assumes equivalent $2M home in
               destination market. Consult your tax advisor for precise
               calculations.
             </p>

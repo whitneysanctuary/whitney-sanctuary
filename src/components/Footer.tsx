@@ -37,7 +37,7 @@ export function Footer() {
         <p className="mt-6 text-center text-[11px] leading-relaxed text-slate/60">
           Sale includes two parcels: 06156102 (Weddington Chase HOA, 0.475 ac)
           and 06156006R (non-HOA, 0.784 ac). Both parcels convey on a single
-          deed (Book 8351, Page 858). Listing price $2,195,000. Contact Alex
+          deed (Book 8351, Page 858). Listing price $2,025,000. Contact Alex
           Purdy for details. 37-unit fenestration package and grand entry
           renewal installed 2026 by West Shore Home (GC License #L.81059).
           Market replacement range $85,000&ndash;$135,000, validated by

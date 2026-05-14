@@ -26,7 +26,7 @@ const comparisons = [
     sqft: "5,454",
     lot: "1.26 acres (two parcels)",
     bedBath: "6 BR / 5 BA",
-    propertyTax: "$14,223/yr",
+    propertyTax: "$13,122/yr",
     highlighted: true,
   },
 ];
@@ -39,7 +39,7 @@ export default function MarketComparison() {
           The Arbitrage
         </p>
         <h2 className="font-heading text-3xl font-semibold text-navy md:text-4xl">
-          What $2,195,000 Buys.
+          What $2,025,000 Buys.
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-slate">
           Identical capital. Three markets. The geographic distribution of

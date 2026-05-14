@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What are the property taxes on this compound?",
     answer:
-      "Annual property tax is approximately $14,223 at the Town of Marvin tax rate of 0.648% applied to the $2,195,000 listing price. North Carolina has no estate tax and a flat 3.99% income tax rate (2026), creating substantial savings versus high-tax states like California, New York, and New Jersey.",
+      "Annual property tax is approximately $13,122 at the Town of Marvin tax rate of 0.648% applied to the $2,025,000 listing price. North Carolina has no estate tax and a flat 3.99% income tax rate (2026), creating substantial savings versus high-tax states like California, New York, and New Jersey.",
   },
   {
     question:

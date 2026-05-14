@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://whitneysanctuary.com"),
   title: {
     default:
-      "The Whitney Sanctuary — 1.26-Acre Legacy Compound | Waxhaw NC | $2,195,000",
+      "The Whitney Sanctuary — 1.26-Acre Legacy Compound | Waxhaw NC | $2,025,000",
     template: "%s | The Whitney Sanctuary",
   },
   description:
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://whitneysanctuary.com",
     siteName: "The Whitney Sanctuary",
-    title: "The Whitney Sanctuary — Legacy Compound | $2,195,000",
+    title: "The Whitney Sanctuary — Legacy Compound | $2,025,000",
     description:
       "1.26-acre two-parcel luxury compound in Waxhaw NC. $201,000–$337,000 in documented 2025-2026 system renewals. Pre-inspection certified. MLS #4362179.",
     images: [
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Whitney Sanctuary — $2,195,000 | Waxhaw NC",
+    title: "The Whitney Sanctuary — $2,025,000 | Waxhaw NC",
     description:
       "1.26-acre two-parcel luxury compound. $201,000–$337,000 in 2025-2026 system renewals. Non-HOA rear parcel.",
     images: ["https://whitneysanctuary.com/images/hero-facade.jpg"],

@@ -77,7 +77,7 @@ export default function StructuredData() {
         "@type": "Offer",
         "@id": "https://whitneysanctuary.com/#offer",
         url: "https://whitneysanctuary.com",
-        price: 2195000,
+        price: 2025000,
         priceCurrency: "USD",
         availability: "https://schema.org/PreOrder",
         availabilityStarts: "2026-06-01",
@@ -115,7 +115,7 @@ export default function StructuredData() {
         url: "https://whitneysanctuary.com",
         name: "The Whitney Sanctuary",
         description:
-          "Luxury legacy compound at 7810 Stonehaven Drive, Waxhaw NC. Offered at $2,195,000.",
+          "Luxury legacy compound at 7810 Stonehaven Drive, Waxhaw NC. Offered at $2,025,000.",
         inLanguage: "en-US",
         publisher: { "@id": "https://whitneysanctuary.com/#alex" },
       },

@@ -21,7 +21,7 @@ export const regions: Record<RegionKey, RegionCampaign> = {
     label: "Palo Alto / Silicon Valley",
     headlines: [
       "Your $4M Buys a Lot in Palo Alto. Here, It Buys a Legacy.",
-      "Trade the 101 Commute for a Japanese Garden. 1.26-Acre Compound, $2.195M.",
+      "Trade the 101 Commute for a Japanese Garden. 1.26-Acre Compound, $2.025M.",
       "Zero State Income Tax. Zero Deferred Maintenance. One Private Zen Sanctuary.",
     ],
     zips: [
