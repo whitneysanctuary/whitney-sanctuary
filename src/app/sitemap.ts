@@ -13,5 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         "https://whitneysanctuary.com/images/entry-maple.jpg",
       ],
     },
+    {
+      url: "https://whitneysanctuary.com/infrastructure-report.pdf",
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

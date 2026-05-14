@@ -32,7 +32,7 @@ export async function sendWhiteGloveEmail({
     <li>Japanese garden, private creek, Wolf/Sub-Zero</li>
   </ul>
   <p>I\u2019d welcome the opportunity to walk you through the compound in person. Reply to this email or call me directly at <strong>704-989-9005</strong> to schedule a private showing at your convenience.</p>
-  ${downloadedReport ? '<p>Your Infrastructure Integrity Report is available for download at <a href="https://whitneysanctuary.com/Whitney_Infrastructure_Report_FINAL.pdf" style="color: #C4A35A;">whitneysanctuary.com</a>.</p>' : ""}
+  ${downloadedReport ? '<p>Your Infrastructure Integrity Report is available for download at <a href="https://whitneysanctuary.com/infrastructure-report.pdf" style="color: #C4A35A;">whitneysanctuary.com</a>.</p>' : ""}
   <p style="margin-top: 32px;">Be well,</p>
   <p><strong>Alex Purdy</strong><br/>Principal &amp; Steward<br/><a href="https://whitneysanctuary.com" style="color: #C4A35A;">whitneysanctuary.com</a><br/>704-989-9005</p>
   <div style="border-top: 1px solid #D4D0C8; margin-top: 32px; padding-top: 16px; font-size: 12px; color: #4A5568;">

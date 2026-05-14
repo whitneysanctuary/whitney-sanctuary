@@ -93,10 +93,10 @@ export function LeadModal({
       });
 
       if (downloadAfterSubmit) {
-        window.open(
-          "/Whitney_Infrastructure_Report_FINAL.pdf",
-          "_blank"
-        );
+        const link = document.createElement("a");
+        link.href = "/infrastructure-report.pdf";
+        link.download = "Whitney-Sanctuary-Infrastructure-Report.pdf";
+        link.click();
       }
     }
   }
