@@ -62,10 +62,15 @@ export default function TaxCalculator() {
             <select
               value={stateCode}
               onChange={(e) => setStateCode(e.target.value)}
-              className="form-input w-full border-white/20 bg-white/5 px-4 py-4 text-lg text-white focus:border-gold"
+              className="w-full cursor-pointer border border-white/20 bg-white/5 px-4 py-4 text-lg text-white focus:border-gold focus:outline-none"
+              style={{ colorScheme: "dark" }}
             >
               {Object.entries(STATES).map(([code, data]) => (
-                <option key={code} value={code} className="bg-navy">
+                <option
+                  key={code}
+                  value={code}
+                  style={{ backgroundColor: "#1B2A4A", color: "white", padding: "12px" }}
+                >
                   {data.name}
                 </option>
               ))}
@@ -77,17 +82,20 @@ export default function TaxCalculator() {
               Annual Household Income
             </label>
             <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-lg text-white/50">
+              <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-lg text-white/50">
                 $
               </span>
               <input
-                type="number"
-                value={income}
-                onChange={(e) => setIncome(Number(e.target.value))}
-                step="50000"
-                min="100000"
-                max="20000000"
-                className="form-input w-full border-white/20 bg-white/5 py-4 pl-8 pr-4 text-lg text-white focus:border-gold"
+                type="text"
+                inputMode="numeric"
+                value={income.toLocaleString()}
+                onChange={(e) => {
+                  const numericValue = Number(e.target.value.replace(/[^0-9]/g, ""));
+                  if (numericValue <= 20000000) {
+                    setIncome(numericValue);
+                  }
+                }}
+                className="w-full border border-white/20 bg-white/5 py-4 pl-8 pr-4 text-lg text-white focus:border-gold focus:outline-none"
               />
             </div>
           </div>
