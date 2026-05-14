@@ -4,9 +4,12 @@ import { useState } from "react";
 import { HeroSection } from "@/components/HeroSection";
 import { CulinarySection } from "@/components/CulinarySection";
 import { WellnessSection } from "@/components/WellnessSection";
+import MarketComparison from "@/components/MarketComparison";
+import TaxCalculator from "@/components/TaxCalculator";
 import { FreedomSection } from "@/components/FreedomSection";
 import { ComingSoonGallery } from "@/components/ComingSoonGallery";
 import { ForensicSection } from "@/components/ForensicSection";
+import FaqSection from "@/components/FaqSection";
 import { Footer } from "@/components/Footer";
 import { ComingSoonBanner } from "@/components/ComingSoonBanner";
 import { LeadModal, type LeadSource } from "@/components/LeadModal";
@@ -34,9 +37,12 @@ export default function Home() {
         />
         <CulinarySection />
         <WellnessSection />
+        <MarketComparison />
+        <TaxCalculator />
         <FreedomSection />
         <ComingSoonGallery />
         <ForensicSection onCTA={() => openModal("report")} />
+        <FaqSection />
       </main>
 
       <Footer />

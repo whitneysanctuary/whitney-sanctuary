@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
+import StructuredData from "@/components/StructuredData";
+import Clarity from "@/components/Clarity";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -17,103 +19,87 @@ const sourceSans = Source_Sans_3({
   weight: ["300", "400", "600", "700"],
 });
 
-const siteUrl = "https://whitneysanctuary.com";
-const heroImage = `${siteUrl}/images/hero-facade.jpg`;
-
 export const metadata: Metadata = {
-  title:
-    "The Whitney Sanctuary | All Systems Renewed 2025–2026 | 1.26-Acre Legacy Compound | Waxhaw, NC | $2,195,000",
+  metadataBase: new URL("https://whitneysanctuary.com"),
+  title: {
+    default:
+      "The Whitney Sanctuary — 1.26-Acre Legacy Compound | Waxhaw NC | $2,195,000",
+    template: "%s | The Whitney Sanctuary",
+  },
   description:
-    "1.26-acre dual-parcel compound at 7810 Stonehaven Drive, Waxhaw NC. $201,000–$337,000 in documented system renewals: roof, HVAC, 37-window fenestration package, grand entry, gutters, crawlspace, pool systems, plumbing, electrical, landscaping, and more. Pre-inspection certified. Wolf/Sub-Zero culinary suite. Non-HOA rear lot with Japanese garden. Offered at $2,195,000.",
+    "Luxury two-parcel compound at 7810 Stonehaven Drive. John Wieland Whitney floorplan, 5,454 sq ft, 6BR/5BA. $201,000–$337,000 in 2025-2026 system renewals. Non-HOA rear parcel with Heritage Cabin and Japanese garden. MLS #4362179. Active 6/1/2026.",
   keywords: [
-    "Luxury Waxhaw Estate",
-    "John Wieland Whitney for Sale",
-    "Marvin NC Relocation",
-    "Weddington Chase luxury home",
-    "Charlotte compound for sale",
-    "Non-HOA estate NC",
+    "Waxhaw NC luxury homes",
+    "John Wieland Whitney for sale",
+    "Marvin NC luxury real estate",
+    "Weddington Chase homes",
+    "non-HOA luxury homes North Carolina",
+    "Charlotte luxury compound",
+    "7810 Stonehaven Drive",
+    "luxury homes near Charlotte NC",
+    "Union County luxury real estate",
+    "relocation North Carolina from California",
+    "tax advantage real estate NC",
+    "$2 million homes Charlotte",
+    "principal-led real estate sale NC",
   ],
+  authors: [{ name: "Alex Purdy", url: "https://whitneysanctuary.com" }],
+  creator: "Alex Purdy",
+  publisher: "The Whitney Sanctuary",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "https://whitneysanctuary.com",
+  },
   openGraph: {
-    title:
-      "The Whitney Sanctuary | All Systems Renewed 2025–2026 | 1.26-Acre Legacy Compound | Waxhaw, NC | $2,195,000",
-    description:
-      "1.26-acre dual-parcel compound at 7810 Stonehaven Drive, Waxhaw NC. $201,000–$337,000 in documented system renewals: roof, HVAC, 37-window fenestration package, grand entry, gutters, crawlspace, pool systems, plumbing, electrical, landscaping, and more. Pre-inspection certified. Wolf/Sub-Zero culinary suite. Non-HOA rear lot with Japanese garden. Offered at $2,195,000.",
-    url: siteUrl,
+    type: "website",
+    locale: "en_US",
+    url: "https://whitneysanctuary.com",
     siteName: "The Whitney Sanctuary",
+    title: "The Whitney Sanctuary — Legacy Compound | $2,195,000",
+    description:
+      "1.26-acre two-parcel luxury compound in Waxhaw NC. $201,000–$337,000 in documented 2025-2026 system renewals. Pre-inspection certified. MLS #4362179.",
     images: [
       {
-        url: heroImage,
+        url: "https://whitneysanctuary.com/images/hero-facade.jpg",
         width: 2400,
         height: 1350,
         alt: "The Whitney Sanctuary full-brick facade illuminated at night, 7810 Stonehaven Drive Waxhaw NC",
+        type: "image/jpeg",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "The Whitney Sanctuary | All Systems Renewed 2025–2026 | $2,195,000",
+    title: "The Whitney Sanctuary — $2,195,000 | Waxhaw NC",
     description:
-      "1.26-acre dual-parcel compound at 7810 Stonehaven Drive, Waxhaw NC. $201,000–$337,000 in documented system renewals. Pre-inspection certified. Wolf/Sub-Zero culinary suite. Non-HOA rear lot. Offered at $2,195,000.",
-    images: [heroImage],
+      "1.26-acre two-parcel luxury compound. $201,000–$337,000 in 2025-2026 system renewals. Non-HOA rear parcel.",
+    images: ["https://whitneysanctuary.com/images/hero-facade.jpg"],
   },
-  robots: { index: true, follow: true },
-  alternates: { canonical: siteUrl },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "Real Estate",
+  applicationName: "The Whitney Sanctuary",
+  referrer: "origin-when-cross-origin",
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "SingleFamilyResidence",
-      name: "The Whitney Sanctuary: Legacy Compound",
-      description:
-        "1.26-acre dual-parcel compound at 7810 Stonehaven Drive, Waxhaw NC. $201,000–$337,000 in documented system renewals. All major systems renewed 2025–2026. Pre-inspection certified. Wolf/Sub-Zero culinary suite. Non-HOA rear lot with Japanese garden and heritage cabin.",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "7810 Stonehaven Drive",
-        addressLocality: "Waxhaw",
-        addressRegion: "NC",
-        postalCode: "28173",
-        addressCountry: "US",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 34.9388,
-        longitude: -80.7367,
-      },
-      numberOfRooms: 11,
-      numberOfBedrooms: 6,
-      numberOfBathroomsTotal: 5,
-      floorSize: {
-        "@type": "QuantitativeValue",
-        value: 5454,
-        unitCode: "FTK",
-      },
-      lotSize: {
-        "@type": "QuantitativeValue",
-        value: 1.26,
-        unitCode: "ACR",
-      },
-      yearBuilt: 2002,
-      image: heroImage,
-      url: siteUrl,
-    },
-    {
-      "@type": "RealEstateAgent",
-      name: "Alex Purdy",
-      url: siteUrl,
-      telephone: "+1-704-989-9005",
-      email: "alex@whitneysanctuary.com",
-      areaServed: {
-        "@type": "City",
-        name: "Waxhaw",
-        containedInPlace: { "@type": "State", name: "North Carolina" },
-      },
-    },
-  ],
+export const viewport: Viewport = {
+  themeColor: "#1B2A4A",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -130,15 +116,12 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
       </head>
       <body className="bg-white antialiased">
+        <StructuredData />
+        <Clarity />
         {children}
 
-        {/* GTM — replace GTM-XXXXXXX with your container ID */}
         <Script
           id="gtm"
           strategy="afterInteractive"
@@ -151,7 +134,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Meta Pixel — replace XXXXXXXXXX with your Pixel ID */}
         <Script
           id="meta-pixel"
           strategy="afterInteractive"
